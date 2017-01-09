@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkList_2", "LinkList_2.vcxproj", "{322B2120-1B0F-447E-8478-7B53282E358A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{322B2120-1B0F-447E-8478-7B53282E358A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{322B2120-1B0F-447E-8478-7B53282E358A}.Debug|Win32.Build.0 = Debug|Win32
+		{322B2120-1B0F-447E-8478-7B53282E358A}.Release|Win32.ActiveCfg = Release|Win32
+		{322B2120-1B0F-447E-8478-7B53282E358A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal
