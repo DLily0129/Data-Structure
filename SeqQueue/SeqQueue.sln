@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SeqQueue", "SeqQueue.vcxproj", "{A1F2B88A-1EDB-4753-9155-1DEC2BAD6D15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1F2B88A-1EDB-4753-9155-1DEC2BAD6D15}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A1F2B88A-1EDB-4753-9155-1DEC2BAD6D15}.Debug|Win32.Build.0 = Debug|Win32
+		{A1F2B88A-1EDB-4753-9155-1DEC2BAD6D15}.Release|Win32.ActiveCfg = Release|Win32
+		{A1F2B88A-1EDB-4753-9155-1DEC2BAD6D15}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
