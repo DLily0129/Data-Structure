@@ -4,6 +4,7 @@
 #include<iomanip>
 using std::ostream;
 using std::cout;
+using std::cin;
 using std::endl;
 using std::setw;
 using std::setfill;
@@ -15,7 +16,9 @@ struct Triple
 	int row,col;
 	ElemType value;
 
-	Triple() {}
+	Triple() 
+	{
+	}
 	Triple(int r,int c,const ElemType &e):row(r),col(c),value(e) {}
 };
 
@@ -27,7 +30,8 @@ protected:
 	int rows,cols,num;
 
 public:
-	TriSparseMatrix();
+	TriSparseMatrix();   //默认构造一个空矩阵
+	TriSparseMatrix(int _rows,int _cols,int _num);
 	TriSparseMatrix(int _rows,int _cols,int _num,const Triple<ElemType> *t);
 	TriSparseMatrix(const TriSparseMatrix &copy);  //深拷贝
 	TriSparseMatrix & operator=(const TriSparseMatrix &other);  //深赋值
@@ -36,6 +40,7 @@ public:
 	void FastTranspose(TriSparseMatrix &dest);    //转置的快速算法
 	template <typename ElemType>
 	friend ostream & operator<<(ostream &out,const TriSparseMatrix<ElemType> &mat);
+	
 };
 
 template <typename ElemType>
@@ -45,6 +50,20 @@ TriSparseMatrix<ElemType>::TriSparseMatrix()
 	cols=0;
 	num=0;
 	triElems=NULL;
+}
+
+template <typename ElemType>
+TriSparseMatrix<ElemType>::TriSparseMatrix(int _rows,int _cols,int _num)
+{
+	rows=_rows;
+	cols=_cols;
+	num=_num;
+	triElems=new Triple<ElemType>[num];
+	for(int i=0;i<num;i++)
+	{
+		cout<<"请输入row，col，value:";
+		cin>>triElems[i].row>>triElems[i].col>>triElems[i].value;
+	}
 }
 
 template <typename ElemType>
